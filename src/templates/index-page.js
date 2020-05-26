@@ -5,6 +5,12 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Header from "../components/sections/header"
+import CaseStudies from "../components/sections/casestudies"
+import Blog from "../components/sections/blog"
+import Services from "../components/sections/services"
+import Contact from "../components/sections/contact"
+import About from "../components/sections/about"
 
 export const IndexPageTemplate = ({
   image,
@@ -131,6 +137,13 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Header />
+      <About />
+      <Services />
+      <CaseStudies />
+      <Blog />
+      <Contact />
+
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

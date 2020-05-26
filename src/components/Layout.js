@@ -2,14 +2,21 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Navigation from '../components/navigation/Navigation'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
+import { ThemeProvider } from "styled-components"
+
+import theme from "../../styles/theme"
+import GlobalStyles from "../../styles/GlobalStyles"
+
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -48,10 +55,10 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <Navbar />
+      <Navigation />
       <div>{children}</div>
       <Footer />
-    </div>
+    </ThemeProvider>
   )
 }
 
