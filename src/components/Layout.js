@@ -6,6 +6,7 @@ import Navigation from '../components/navigation/Navigation'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import "../../static/fonts/fonts.css"
 
 import { ThemeProvider } from "styled-components"
 
@@ -55,9 +56,9 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
+      <GlobalStyles />
       <Navigation />
       <div>{children}</div>
-      <Footer />
     </ThemeProvider>
   )
 }

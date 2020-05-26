@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-
+import BlogRoll from "../BlogRoll"
 import { Container, Section } from "../global"
 
 const Blog = () => (
   <StyledSection>
     <BlogContainer id="blog">
       <BlogTitle>Blog</BlogTitle>
-      <Subtitle>Coming Soon</Subtitle>
+      <BlogRoll />
     </BlogContainer>
   </StyledSection>
 )
@@ -32,38 +32,3 @@ const BlogTitle = styled.h3`
   text-align: center;
 `
 
-// const TryItButton = styled.button`
-//   font-weight: 500;
-//   font-size: 14px;
-//   color: white;
-//   letter-spacing: 1px;
-//   height: 60px;
-//   display: block;
-//   margin-left: 8px;
-//   text-transform: uppercase;
-//   cursor: pointer;
-//   white-space: nowrap;
-//   background: ${props => props.theme.color.secondary};
-//   border-radius: 4px;
-//   padding: 0px 40px;
-//   border-width: 0px;
-//   border-style: initial;
-//   border-color: initial;
-//   border-image: initial;
-//   outline: 0px;
-//   &:hover {
-//     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
-//   }
-//   @media (max-width: ${props => props.theme.screen.md}) {
-//   }
-//   @media (max-width: ${props => props.theme.screen.sm}) {
-//     margin-left: 0;
-//   }
-// `
-
-const Subtitle = styled.span`
-  ${props => props.theme.font_size.xxsmall}
-  padding-top: 16px;
-  font-size: 14px;
-  color: ${props => props.theme.color.primary};
-`

@@ -143,16 +143,6 @@ const IndexPage = ({ data }) => {
       <CaseStudies />
       <Blog />
       <Contact />
-
-      <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-      />
     </Layout>
   )
 }
