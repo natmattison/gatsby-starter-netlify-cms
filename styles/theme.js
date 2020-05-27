@@ -21,7 +21,6 @@ const theme = {
     larger: "font-size: 40px; line-height: 50px;",
     xlarge: "font-size: 48px; line-height: 48px;",
   },
-
   color: {
     primary: "#071435",
     secondary: "#098c8c",

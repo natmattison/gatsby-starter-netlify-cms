@@ -75,7 +75,7 @@ class Navigation extends Component {
         <StyledContainer>
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-              <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+              <AnchorLink href="/" onClick={this.closeMobileMenu}>
                 Goodman Analytics
               </AnchorLink>
             </Scrollspy>
