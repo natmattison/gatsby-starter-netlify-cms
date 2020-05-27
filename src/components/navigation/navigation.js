@@ -16,7 +16,7 @@ import {
 
 const NAV_ITEMS = ["About", "Services", "Case Studies", "Blog", "Contact"]
 
-export default class Navigation extends Component {
+class Navigation extends Component {
   state = {
     mobileMenuOpen: false,
     hasScrolled: false,
@@ -106,3 +106,6 @@ export default class Navigation extends Component {
     )
   }
 }
+
+export default Navigation
+

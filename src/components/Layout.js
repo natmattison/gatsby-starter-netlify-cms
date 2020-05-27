@@ -1,9 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import Navigation from '../components/navigation/Navigation'
 import './all.sass'
+import Navigation from './navigation/Navigation'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import "../../static/fonts/fonts.css"
