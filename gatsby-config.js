@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
-    description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    title: 'Goodman Analytics',
+    description: 'Nicole Goodman, finding and monitoring untapped value in your datasets using the best statistical and data science techniques',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

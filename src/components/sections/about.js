@@ -66,6 +66,8 @@ const AboutTitle = styled.h3`
 
 const FormSubtitle = styled.span`
   ${props => props.theme.font_size.xxsmall}
+  margin-top: 12px;
+  display: flex;
 `
 
 const FormSubtitleLink = styled.a`
