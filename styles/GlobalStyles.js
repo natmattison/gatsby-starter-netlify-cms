@@ -17,7 +17,19 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${props => props.theme.font.primary};
   }
 
+  thead {
+    background: ${props => props.theme.color.secondary};
+    color: ${props => props.theme.color.background.white};
+  }
   
+  table {
+    margin-bottom: 20px;
+  }
+
+  tr:nth-child(even) {
+    background: ${props => props.theme.color.white.lessdark};
+  }
+
   h1 {
     ${props => props.theme.font_size.xlarge};
     font-family: ${props => props.theme.font.bold};
