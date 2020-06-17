@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 
@@ -46,10 +45,10 @@ class Navigation extends Component {
     }
   }
 
-  getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase().split(" ").join("-")}`} onClick={this.closeMobileMenu}>
+  getNavExternalLink = item => (
+    <a href={`http://${window.location.host}/#${item.toLowerCase().split(" ").join("-")}`} onClick={this.closeMobileMenu}>
       {item}
-    </AnchorLink>
+    </a>
   )
 
   getNavList = ({ mobile = false }) => (
@@ -61,7 +60,7 @@ class Navigation extends Component {
         offset={-64}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          <NavItem key={navItem}>{this.getNavExternalLink(navItem)}</NavItem>
         ))}
       </Scrollspy>
     </NavListWrapper>
@@ -75,9 +74,9 @@ class Navigation extends Component {
         <StyledContainer>
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-              <AnchorLink href="/" onClick={this.closeMobileMenu}>
+              <a href="https://goodmananalytics.com" onClick={this.closeMobileMenu}>
                 Goodman Analytics
-              </AnchorLink>
+              </a>
             </Scrollspy>
           </Brand>
           <Mobile>
