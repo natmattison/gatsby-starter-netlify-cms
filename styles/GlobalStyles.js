@@ -24,10 +24,16 @@ const GlobalStyles = createGlobalStyle`
   
   table {
     margin-bottom: 20px;
+    max-width: 100%;
   }
 
   tr:nth-child(even) {
     background: ${props => props.theme.color.white.lessdark};
+  }
+
+  td:nth-child(1) {
+    text-align: right;
+    padding-right: 10px;
   }
 
   h1 {

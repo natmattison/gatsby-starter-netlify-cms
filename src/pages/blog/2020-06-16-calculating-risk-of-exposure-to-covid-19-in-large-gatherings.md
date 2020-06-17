@@ -40,12 +40,12 @@ If your initial reaction is that the risk seems low, let me remind you that thes
 
 All calculations and data are available [in this Google Sheet](https://docs.google.com/spreadsheets/d/1vrbhVdLQSGEL1k2B6g_OXAYK9r8q5OQMxcEA6v-2e6A/edit?usp=sharing). Feel free to use this to calculate risk across various numbers of people at a gathering, and you may even update the parameter estimates and see how the result changes – note that you will have to download or copy the sheet to update the parameters.
 
-**Notes**
-
 ![](/img/gatheringrisk.png)
 
-*\* For simplicity, I am only considering risk as exposure to COVID-19, rather than exposure and contracting COVID-19. Research indicates that there are numerous factors associated with contracting COVID-19 upon exposure, and I will leave those calculations and estimations for more experienced epidemiologists.*
+**Notes**
 
-*\* These parameter estimates will surely change over time – you can download the Excel file to update based on the latest reported cases or to adjust the parameter estimates.*
+* For simplicity, I am only considering risk as exposure to COVID-19, rather than exposure and contracting COVID-19. Research indicates that there are numerous factors associated with contracting COVID-19 upon exposure, and I will leave those calculations and estimations for more experienced epidemiologists.
 
-*\* For the time being, these calculations are assuming nobody in a gathering has already had COVID-19 and is immune to the virus, which is almost certainly untrue once we get into the calculations of larger gatherings. Because this parameter is largely unknown, likely small, and difficult to estimate, I have intentionally left it out.*
+* These parameter estimates will surely change over time – you can download the Excel file to update based on the latest reported cases or to adjust the parameter estimates.
+
+* For the time being, these calculations are assuming nobody in a gathering has already had COVID-19 and is immune to the virus, which is almost certainly untrue once we get into the calculations of larger gatherings. Because this parameter is largely unknown, likely small, and difficult to estimate, I have intentionally left it out.
