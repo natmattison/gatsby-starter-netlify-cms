@@ -9,7 +9,10 @@ import { ThemeProvider } from "styled-components"
 
 import theme from "../../styles/theme"
 import GlobalStyles from "../../styles/GlobalStyles"
+import ReactGA from 'react-ga';
 
+ReactGA.initialize('UA-167215828-1');
+ReactGA.pageview(window.location.pathname);
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
