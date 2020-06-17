@@ -46,7 +46,7 @@ class Navigation extends Component {
   }
 
   getNavExternalLink = item => (
-    <a href={`http://${window.location.host}/#${item.toLowerCase().split(" ").join("-")}`} onClick={this.closeMobileMenu}>
+    <a href={`https://goodmananalytics.com/#${item.toLowerCase().split(" ").join("-")}`} onClick={this.closeMobileMenu}>
       {item}
     </a>
   )
