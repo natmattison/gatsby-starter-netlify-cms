@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Calculating risk of exposure to COVID-19 in large gatherings
-date: 2020-06-16T22:41:50.550Z
+date: 2020-06-17T22:41:50.550Z
 description: Calculating risk of exposure to COVID-19 in large gatherings
 featuredpost: true
 featuredimage: /img/gatheringrisk.png
